@@ -1,2 +1,2 @@
 # Builderment-Wiki
-A wiki for the game Builderment
+A wiki for the game Builderment.
