@@ -13,6 +13,7 @@ function search() {
     const input = document.getElementsByTagName("input")[0];
     const searchDiv = document.getElementsByClassName("search")[0];
     const ulTag = document.getElementById("search");
+    console.log(ulTag)
     ulTag.innerHTML = "";
     if (input.value) searchDiv.style.visibility = "visible";
     else return searchDiv.style.visibility = "hidden";
