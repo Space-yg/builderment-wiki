@@ -6,7 +6,8 @@ for (let i = location.href.split("/").length - 2; i > 0; i--) {
     if (location.href.split("/")[i] === "builderment-wiki") break;
     else path += "../";
 }
-
+console.log(location.href.split("/"))
+console.log(path)
 // Search
 function search() {
     const input = document.getElementsByTagName("input")[0];
