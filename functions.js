@@ -1,5 +1,12 @@
 import { pagesLinks, pagesTags } from "./variables.js";
 
+// Get path
+var path = "";
+for (let i = location.href.split("/").length - 2; i > 0; i--) {
+    if (location.href.split("/")[i] === "builderment-wiki") break;
+    else path += "../";
+}
+
 // Search
 function search() {
     const input = document.getElementsByTagName("input")[0];
@@ -13,7 +20,7 @@ function search() {
     for (let i = 0; i < showPages.length && i < 5; i++) {
         // <li onclick="window.location.href = `./wikis/Items copy/page.html`;">Items</li>
         const li = document.createElement("li");
-        li.setAttribute("onclick", `window.location.href = "${showPages[i].getAttribute("href")}"`);
+        li.setAttribute("onclick", `window.location.href = "${path + showPages[i].getAttribute("href")}"`);
         li.innerHTML = showPages[i].innerText;
         ulTag.appendChild(li);
     }
