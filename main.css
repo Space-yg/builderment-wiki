@@ -1,0 +1,212 @@
+/* Fonts */
+@font-face {
+    font-family: Oswald;
+    src: url(./font/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: troika;
+    src: url(./font/troika.otf);
+}
+
+/* Organization */
+body {
+    /* Position */
+    margin-top: 70px;
+    /* Color */
+    background-color: white;
+    color: black;
+    /* Font */
+    font-family: Oswald;
+    font-size: 18px;
+}
+div {
+    /* Position */
+    max-width: 600px;
+    margin: 15px auto;
+}
+div div {
+    /* Position */
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    /* border */
+    border-radius: 10px;
+    border: 2px solid;
+}
+hr {
+    /* Position */
+    margin: 10px -13px;
+}
+
+/* Texts */
+header {
+    /* Font */
+    text-align: center;
+    color: rgb(77, 194, 52);
+    font-size: 48px;
+    font-family: troika;
+}
+p {
+    /* Position */
+    margin: 7px 0;
+}
+h1 {
+    /* Position */
+    margin: 15px 0 7px 0;
+    /* Font */
+    color: lightgray;
+    font-size: 48px;
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+}
+h2 {
+    /* Position */
+    margin: 15px 0 7px 0;
+    /* Font */
+    color: lightgray;
+    font-size: 36px;
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
+}
+h3 {
+    /* Position */
+    margin: 15px 0 7px 0;
+    /* Font */
+    color: lightgray;
+    font-size: 24px;
+    text-decoration: underline 1px;
+    text-underline-offset: 2px;
+}
+a {
+    /* Font */
+    color: rgb(77, 194, 52);
+    text-decoration: none;
+}
+a:visited {
+    /* Font */
+    color: rgb(77, 194, 52);
+}
+a:hover {
+    /* Font */
+    color: rgb(121, 227, 93);
+    transition: .5s;
+}
+ul {
+    /* Position */
+    margin: 6px 0;
+    padding: 0 0 0 30px;
+}
+ol {
+    /* Position */
+    margin: 6px 0;
+    padding: 0 0 0 25px;
+}
+ol li {
+    /* Position */
+    padding: 0 0 0 5px;
+}
+
+/* Image */
+img {
+    /* Position */
+    width: 100%;
+    margin: 7px 0;
+    /* Border */
+    border-radius: 5px;
+}
+
+/* Table */
+table {
+    /* Position */
+    width: 100%;
+    table-layout: fixed;
+    /* Border */
+    border: solid 1px;
+    border-collapse: collapse;
+    /* Font */
+    font-size: 18px;
+}
+thead {
+    /* Font */
+    font-family: troika;
+}
+td {
+    /* Position */
+    width: auto;
+    padding: 10px;
+    /* Border */
+    border: solid 1px;
+}
+
+/* Input */
+input[type="search"] {
+    /* Position */
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto;
+    padding: 3px 10px;
+    display: block;
+    /* Border */
+    border: solid rgb(236, 236, 236) 2px;
+    border-radius: 7px;
+    /* Font */
+    font-family: Oswald;
+}
+input[type="search"]:focus {
+    background-color: rgb(248, 255, 248);
+}
+
+/* Search */
+div.search {
+    /* Position */
+    position: absolute;
+    left: calc(50% - 125px);
+    width: 250px;
+    margin: -10px auto;
+    padding: 0;
+    z-index: 1;
+    /* Border */
+    border: none;
+    visibility: hidden;
+}
+div.search:hover {
+    cursor: pointer;
+}
+div.search ul {
+    /* Position */
+    margin: 0;
+    padding: 0;
+    /* Font */
+    font-size: 13px;
+    list-style: none;
+}
+div.search ul li {
+    /* Position */
+    height: 19px;
+    margin: -1px 0;
+    padding: 3px 10px;
+    /* Border */
+    border: solid 1px;
+}
+div.search ul li:hover {
+    background-color: rgb(248, 255, 248);
+}
+
+/* Scrollbar */
+/* All of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track of the scrollbar or what is behind the scrollbar */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+/* Handle or the scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 5px;
+}
+/* Hover on Handle */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(183, 183, 183);
+}
